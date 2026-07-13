@@ -49,11 +49,10 @@ print (WARmodel.intercept_)
 #find slope and intercept
 print('Mean squared error (MSE): %.2f'
       % mean_squared_error(Y_test, Y_pred))
-#mean error
+#mean error, how off is the data
 print('Coefficient of determination (R^2): %.2f'
       % r2_score(Y_test, Y_pred))
-# r value
-
+#rvalue, is there any correlation in the x/y values?
 plt.scatter(X_test, Y_test,  color='gray')
 plt.plot(X_test, Y_pred, color='red', linewidth=2)
 plt.xlabel('Total bases recorded by batter')
